@@ -1,3 +1,4 @@
+import { FaSearch } from 'react-icons/fa'
 
 function Header() {
   return (
@@ -19,7 +20,7 @@ function Header() {
       </div>
 
       <div>
-     
+     <FaSearch />
       </div>
     </header>
   );
