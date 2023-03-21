@@ -4,6 +4,7 @@ import {
     signInWithEmailAndPassword,
     signOut,
     User,
+    signInAnonymously,
   } from 'firebase/auth'
   
   import { useRouter } from 'next/router'
