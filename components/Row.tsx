@@ -2,12 +2,11 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Movie } from "../typings";
 import Thumbnail from "./Thumbnail";
 import { useRef, useState } from "react";
+import { DocumentData } from "firebase/firestore";
 
 interface Props {
-  title: string;
-  // When using firebase
-  // movie: Movie | DocumentData[]
-  movies: Movie[];
+  title: string,
+  movies: Movie[] | DocumentData[]
 }
 
 function Row({ title, movies }: Props) {
