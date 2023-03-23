@@ -100,11 +100,6 @@ function Plans({ products }: Props) {
               'Subscribe'
             )}
             </button>
-            <Link href="/Home" className="mx-auto">
-            <button className="w-11/12 rounded bg-[#E50914] py-4 text-xl shadow hover:bg-[#f6121d] md:w-[420px]">
-              Continue As Guest
-            </button>
-            </Link>
         </div>
       </main>
     </div>

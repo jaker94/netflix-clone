@@ -1,6 +1,8 @@
+import { signInWithEmailAndPassword } from "firebase/auth";
 import Head from "next/head";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { auth } from "../Firebase";
 import useAuth from "../Hooks/useAuth";
 
 
@@ -82,6 +84,10 @@ function Login() {
           onClick={() => setLogin(false)}>
             Sign up now (Continue as guest)
           </button>
+          <button className="w-11/12 rounded bg-[#E50914] py-4 text-xl shadow hover:bg-[#f6121d] md:w-[420px]"
+          onClick={() => signInWithEmailAndPassword(auth, "testaccount@gmail.com", "guest123")}>
+              Continue As Guest
+            </button>
         </div>
       </form>
     </div>
