@@ -82,9 +82,9 @@ function Login() {
           type="submit" 
           className="text-white hover:underline"
           onClick={() => setLogin(false)}>
-            Sign up now (Continue as guest)
+            Sign up now
           </button>
-          <button className="w-11/12 rounded bg-[#E50914] py-4 text-xl shadow hover:bg-[#f6121d] md:w-[420px]"
+          <button className="w-full rounded bg-[#e50914] font-semibold py-3"
           onClick={() => signInWithEmailAndPassword(auth, "testaccount@gmail.com", "guest123")}>
               Continue As Guest
             </button>
