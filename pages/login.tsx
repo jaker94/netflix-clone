@@ -49,7 +49,7 @@ function Login() {
         width={150}
         height={150}
       />
-      <div
+      <form
       onSubmit={handleSubmit(onSubmit)}
        className="absolute mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0 md:max-w-md md:px-14">
         <h1 className="text-4xl font-semibold">Sign in</h1>
@@ -90,7 +90,7 @@ function Login() {
           </button>
         </div>
       </div>
-    </div>
+    </form>
   );
 }
 
