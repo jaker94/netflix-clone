@@ -89,8 +89,8 @@ function Login() {
             Sign up now
           </button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }
 
