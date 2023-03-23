@@ -49,7 +49,7 @@ function Login() {
         width={150}
         height={150}
       />
-      <form
+      <div
       onSubmit={handleSubmit(onSubmit)}
        className="absolute mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0 md:max-w-md md:px-14">
         <h1 className="text-4xl font-semibold">Sign in</h1>
@@ -76,6 +76,10 @@ function Login() {
         onClick={() => setLogin(true)}>
           Sign In
         </button>
+        <button className="w-full text-white rounded bg-[#e50914] font-semibold py-3"
+          onClick={() => signIn(`testaccount@gmail.com`, `guest123`)}>
+              Continue As Guest
+            </button>
         <div className="text-[gray]">
           New to Netflix?{" "}
           <button 
@@ -84,12 +88,8 @@ function Login() {
           onClick={() => setLogin(false)}>
             Sign up now
           </button>
-          <button className="w-full rounded bg-[#e50914] font-semibold py-3"
-          onClick={() => signInWithEmailAndPassword(auth, "testaccount@gmail.com", "guest123")}>
-              Continue As Guest
-            </button>
         </div>
-      </form>
+      </div>
     </div>
   );
 }
