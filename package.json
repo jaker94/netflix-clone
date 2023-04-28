@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.0.16",
     "@mui/material": "^5.11.13",
     "@stripe/firestore-stripe-payments": "^0.0.6",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "firebase": "^9.17.2",
     "next": "latest",
     "next-transpile-modules": "^10.0.0",
